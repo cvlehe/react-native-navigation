@@ -138,6 +138,7 @@ export class NativeCommandsSender {
       backButtonId: 'RNN.back',
       bottomTabsHeight: 0,
       statusBarHeight: 0,
+      bottomTabsLeftMargin: 0
     });
   }
 
@@ -147,6 +148,7 @@ export class NativeCommandsSender {
       backButtonId: 'RNN.back',
       bottomTabsHeight: 0,
       statusBarHeight: 0,
+      bottomTabsLeftMargin: 0
     };
   }
 

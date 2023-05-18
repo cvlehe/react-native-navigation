@@ -109,6 +109,16 @@
     return self.tabBar.frame.size.height;
 }
 
+- (CGFloat)getBottomTabsLeftMargin {
+    for (UIView *subview in self.tabBar.subviews) {
+        if ([subview isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            CGRect frame = subview.frame;
+            return frame.origin.x;
+        }
+    }
+    return 0.0;
+}
+
 - (void)setSelectedIndexByComponentID:(NSString *)componentID {
     NSArray *children = self.childViewControllers;
     for (id child in children) {

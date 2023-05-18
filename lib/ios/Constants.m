@@ -7,7 +7,8 @@
     return @{
         @"topBarHeight" : @([self topBarHeight]),
         @"statusBarHeight" : @([self statusBarHeight]),
-        @"bottomTabsHeight" : @([self bottomTabsHeight])
+        @"bottomTabsHeight" : @([self bottomTabsHeight]),
+        @"bottomTabsLeftMargin" : @([self bottomTabsLeftMargin]),
     };
 }
 
@@ -21,6 +22,10 @@
 
 + (CGFloat)bottomTabsHeight {
     return [UIApplication.sharedApplication.delegate.window.rootViewController getBottomTabsHeight];
+}
+
++ (CGFloat)bottomTabsLeftMargin {
+    return [UIApplication.sharedApplication.delegate.window.rootViewController getBottomTabsLeftMargin];
 }
 
 @end

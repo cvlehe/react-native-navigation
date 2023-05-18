@@ -26,6 +26,8 @@ typedef void (^RNNReactViewReadyCompletionBlock)(void);
 
 - (CGFloat)getBottomTabsHeight;
 
+- (CGFloat)getBottomTabsLeftMargin;
+
 - (UIViewController *)topMostViewController;
 
 - (void)mergeOptions:(RNNNavigationOptions *)options;

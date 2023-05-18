@@ -153,6 +153,11 @@
     return [self.presentedComponentViewController.tabBarController getBottomTabsHeight];
 }
 
+- (CGFloat)getBottomTabsLeftMargin {
+    return [self.presentedComponentViewController.tabBarController getBottomTabsLeftMargin];
+}
+
+
 - (void)screenPopped {
 }
 
