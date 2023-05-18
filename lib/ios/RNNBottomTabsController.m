@@ -111,9 +111,10 @@
 
 - (CGFloat)getBottomTabsLeftMargin {
     for (UIView *subview in self.tabBar.subviews) {
+        CGFloat x = subview.frame.origin.x;
+
         if ([subview isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
-            CGRect frame = subview.frame;
-            return frame.origin.x;
+            return x;
         }
     }
     return 0.0;
